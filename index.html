@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ManaTime</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link rel="stylesheet" href="./assets/css/main.css" />
+   </head>
+   <body >
+      <!-- TOP NAVBAR STARTS -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="navbar-brand">
+            <a href="javascript:;">
+            <img src="./assets/icons/burger.svg" alt="Hamburger collapse icon" />
+            </a>
+         </div>
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item primary">
+               <img src="./assets/icons/Absence_Icon.svg" alt="Absence Icon" />
+               <span>Absence</span>
+            </li>
+            <li class="breadcrumb-item secondary"><i class="fa fa-balance-scale" aria-hidden="true"></i> Sous module</li>
+            <li class="breadcrumb-item active" aria-current="page">Sous sous module</li>
+         </ol>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-right ml-auto">
+               <div class="nav-right-actions">
+                  <button type="button" class="btn btn-outline-dark">
+                  <i class="fa fa-question" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-dark">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  </button>
+               </div>
+               <div class="nav-right-user">
+                  <div class="nav-right-user-detail">
+                     <p class="nav-right-user-name">Nom et Prenon</p>
+                     <p class="nav-right-user-title">Enterprise</p>
+                  </div>
+                  <div class="nav-right-user-picture nav-right-user-picture--active">
+                     <img src="./assets/Photo.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- TOP NAVBAR ENDS -->
+      <!-- LET SIDEBAR STARTS -->
+      <aside class="sidebar">
+         <div class="sidebar-nav-lists">
+            <ul class="sidebar-nav non-collapse-sidebar-nav nav flex-column">
+               <li>
+                  <a href="javascipt:;">
+                  <i class="fa fa-home"></i>
+                  <span>Accueil</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascipt:;">
+                  <i class="fa fa-plus"></i>
+                  <span>Ajouter</span>
+                  </a>
+               </li>
+            </ul>
+            <ul class="sidebar-nav collapse-sidebar-nav nav flex-column">
+               <div id="accordion">
+                  <div class="collapse-nav-item">
+                     <a href="javascript:;" class="collapse-nav-item-header btn btn-link collapsed collapse-button"
+                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        id="headingOne">
+                     <i class="fa fa-address-card"></i>
+                     <span>
+                     Man espace
+                     </span>
+                     <i class="fa"></i>
+                     </a>
+                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="collapse-nav-item-content">
+                           <ul class="collapse-nav-item-content-list">
+                              <li class="primary">Gestion des soldes</li>
+                              <li>Ajuster un solde</li>
+                              <li>Compteurs</li>
+                              <li>Historique</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collapse-nav-item">
+                     <a href="javascript:;" class="collapse-nav-item-header btn btn-link collapsed collapse-button"
+                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+                        id="headingTwo">
+                     <i class="fa fa-check"></i>
+                     <span>
+                     Validation
+                     </span>
+                     <i class="fa"></i>
+                     </a>
+                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="collapse-nav-item-content">
+                           <ul class="collapse-nav-item-content-list">
+                              <li class="primary">Gestion des soldes</li>
+                              <li>Ajuster un solde</li>
+                              <li>Compteurs</li>
+                              <li>Historique</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collapse-nav-item">
+                     <a href="javascript:;" class="collapse-nav-item-header btn btn-link collapsed collapse-button"
+                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"
+                        id="headingFive">
+                     <i class="fa fa-bars" aria-hidden="true"></i>
+                     <span>
+                     indicateurs
+                     </span>
+                     <i class="fa"></i>
+                     </a>
+                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="collapse-nav-item-content">
+                           <ul class="collapse-nav-item-content-list">
+                              <li class="primary">Gestion des soldes</li>
+                              <li>Ajuster un solde</li>
+                              <li>Compteurs</li>
+                              <li>Historique</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collapse-nav-item">
+                     <a href="javascript:;" class="collapse-nav-item-header btn btn-link collapsed collapse-button"
+                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+                        id="headingThree">
+                     <i class="fa fa-balance-scale"></i>
+                     <span>
+                     Soldes
+                     </span>
+                     <i class="fa"></i>
+                     </a>
+                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="collapse-nav-item-content">
+                           <ul class="collapse-nav-item-content-list">
+                              <li class="primary">Gestion des soldes</li>
+                              <li>Ajuster un solde</li>
+                              <li>Compteurs</li>
+                              <li>Historique</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="collapse-nav-item">
+                     <a href="javascript:;" class="collapse-nav-item-header btn btn-link collapsed collapse-button"
+                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"
+                        id="headingFour">
+                     <i class="fa fa-search"></i>
+                     <span>
+                     Researche
+                     </span>
+                     <i class="fa"></i>
+                     </a>
+                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="collapse-nav-item-content">
+                           <ul class="collapse-nav-item-content-list">
+                              <li class="primary">Gestion des soldes</li>
+                              <li>Ajuster un solde</li>
+                              <li>Compteurs</li>
+                              <li>Historique</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </ul>
+         </div>
+         <img class="sidebar-image" src="assets/icons/Graphic.svg" />
+      </aside>
+      <!-- LET SIDEBAR ENDS -->
+      <!-- MAIN CONTENT STARTS -->
+      <main class="main">
+         <div class="main-inner">
+            <!-- TABLE STARTS -->
+            <div class="table-container">
+               <table class="table table-bordered table-striped table-sm">
+                  <thead>
+                     <tr>
+                        <th scope="col">Utilisateurs</th>
+                        <th scope="col">Catègorie</th>
+                        <th scope="col">Pèriode</th>
+                        <th scope="col">Solde actuel</th>
+                        <th scope="col">Solde pris</th>
+                        <th scope="col">Solde futur</th>
+                        <th scope="col"></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Darlène Menson Dujon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--orange">
+                              </span>
+                              <span clas="category-name">Congès payès
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020-2021</td>
+                        <td>16</td>
+                        <td>10</td>
+                        <td>34</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Marlon Brandon</td>
+                        <td>
+                           <div class="category">
+                              <span class="category-badge category-badge--purple">
+                              </span>
+                              <span clas="category-name">RTT
+                              </span>
+                           </div>
+                        </td>
+                        <td>2020</td>
+                        <td>3</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>
+                           <div class="table-actions">
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Ajuster.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button">
+                              <img src="./assets/icons/Transferer.svg"  />
+                              </button>
+                              <button class="btn btn-link table-action-button" >
+                              <img src="./assets/icons/Solder.svg"  />
+                              </button>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <!-- TABLE ENDS -->
+         </div>
+         <!-- LEFT SIDE WINDOW STARTS -->
+         <div class="side-fixed-window">
+            <div class="side-fixed-window-content">
+               <img src="assets/icons/Logo.svg" class="side-window-logo"  />
+               <div class="side-window-menu">
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Planning.svg" />
+                     <p class="side-window-menu-item-title">Planning</p>
+                  </div>
+                  <div class="side-window-menu-item active">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Absences.svg" />
+                     <p class="side-window-menu-item-title">Absences</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Heures.svg" />
+                     <p class="side-window-menu-item-title">Heures</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_NotedeFrais.svg" />
+                     <p class="side-window-menu-item-title">Note de Frais</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Planning.svg" />
+                     <p class="side-window-menu-item-title">Prêsence</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Compétences.svg" />
+                     <p class="side-window-menu-item-title">Compêtences</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_SalaireetPAie.svg" />
+                     <p class="side-window-menu-item-title">Salaire et paie</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Entretiens.svg" />
+                     <p class="side-window-menu-item-title">Entretiens</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_Matériels.svg" />
+                     <p class="side-window-menu-item-title">Matériels</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Mdule_Documents.svg" />
+                     <p class="side-window-menu-item-title">Documents</p>
+                  </div>
+                  <div class="side-window-menu-item">
+                     <img  class="side-window-menu-item-image" src="./assets/icons/Module_RH.svg" />
+                     <p class="side-window-menu-item-title">RH</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- LEFT SIDE WINDOW ENDS -->
+      </main>
+      <!-- MAIN CONTENT ENDS -->
+   </body>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="./assets/js/main.js"></script>
+</html>
