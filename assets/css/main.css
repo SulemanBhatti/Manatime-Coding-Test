@@ -418,7 +418,7 @@ nav.navbar {
 
 .table-container {
 	background-color: white;
-	border-radius: 6px;
+	border-radius: 4px;
 }
 
 .table {
@@ -441,14 +441,25 @@ nav.navbar {
 
 .table tr td,
 .table tr th {
-	padding: 15px;
+	padding:  0 15px;
+	/* padding:  15px; */
 	vertical-align: middle;
+	height: 38px;
+}
+
+.table tr td:first-child , .table tr td:nth-child(2) {
+	width: 450px;
+}
+
+.table tr td:nth-child(3) ,  .table tr td:nth-child(4) , .table tr td:nth-child(5) , .table tr td:nth-child(6){
+	width: 120px;
 }
 
 .table tr td:last-child,
 .table tr th:last-child {
-	padding: 3px 45px;
+	padding: 3px 42px;
 	vertical-align: middle;
+	width: 270px;
 }
 
 .table-actions {
