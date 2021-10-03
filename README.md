@@ -1,5 +1,5 @@
 # Manatime-Coding-Test
 This project is created as a test for Manasoft
 
-# How to open in browser
-Just open the index.html file in the browser to view the test
+# Check the live deployment at Github pages
+https://sulemanbhatti.github.io/Manatime-Coding-Test/
